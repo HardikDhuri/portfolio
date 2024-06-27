@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="navbar bg-base-200 p-4 fixed top-0 w-full z-50">
+    <nav className="navbar bg-base-200 p-4 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link className="text-3xl font-bold" href="/">
           Hardik Dhuri
