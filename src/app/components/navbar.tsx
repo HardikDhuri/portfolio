@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="lg:hidden">
           <button
-            className="text-3xl focus:outline-none"
+            className="text-xl focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="hidden lg:flex space-x-6">
-          <ul className="menu menu-horizontal text-2xl">
+          <ul className="menu menu-horizontal text-xl">
             {menuItems.map((item) => (
               <li key={item.href}>
                 <Link href={item.href}>
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
             variants={menuVariants}
             className="fixed top-0 left-0 w-full h-full bg-base-200 z-50"
           >
-            <motion.ul className="menu menu-vertical text-2xl p-4">
+            <motion.ul className="menu menu-vertical text-xl p-4">
               {menuItems.map((item) => (
                 <MenuItem key={item.href} {...item} onClick={toggleMenu} />
               ))}
