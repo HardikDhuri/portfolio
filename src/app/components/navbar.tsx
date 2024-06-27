@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
             animate="visible"
             exit="hidden"
             variants={menuVariants}
-            className="absolute top-full left-0 w-full bg-base-200 z-10"
+            className="fixed top-0 left-0 w-full h-full bg-base-200 z-50"
           >
             <motion.ul className="menu menu-vertical text-2xl p-4">
               {menuItems.map((item) => (
