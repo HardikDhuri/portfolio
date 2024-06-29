@@ -35,7 +35,11 @@ const menuItems: MenuItemProps[] = [
   { href: "/", label: "About", onClick: () => {} },
   { href: "/experience", label: "Experience", onClick: () => {} },
   { href: "/projects", label: "Projects", onClick: () => {} },
-  { href: "/articles", label: "Articles", onClick: () => {} },
+  {
+    href: "https://hashnode.com/@hardikdhuri",
+    label: "Articles",
+    onClick: () => {},
+  },
   { href: "/connect", label: "Contact Me", strong: true, onClick: () => {} },
 ];
 
@@ -73,7 +77,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="navbar bg-base-200 p-4 w-full z-50">
+    <nav className="navbar bg-base-200 p-4 w-full z-50 relative">
       <div className="container mx-auto flex justify-between items-center">
         <Link className="text-3xl font-bold" href="/">
           Hardik Dhuri
@@ -106,7 +110,7 @@ const Navbar: React.FC = () => {
             animate="visible"
             exit="hidden"
             variants={menuVariants}
-            className="fixed top-0 left-0 w-full h-full bg-base-200 z-50"
+            className="absolute top-14 left-0 w-full bg-base-200 z-50"
           >
             <motion.ul className="menu menu-vertical text-xl p-4">
               {menuItems.map((item) => (

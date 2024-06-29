@@ -44,12 +44,12 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col h-full md:flex-row">
       <div className="flex-1 flex justify-center items-center p-4 md:p-0">
         <Image
           src={profileImage}
           alt="Profile Image"
-          className="w-1/2 md:w-1/3 max-w-xs md:max-w-md"
+          className="min-w-72 max-w-80"
         />
       </div>
       <div className="flex-1 p-4 md:p-10">
@@ -65,16 +65,16 @@ export default function Page() {
           Basic intro as Expertise in building Event Driven applications using
           .Net Core.
         </p>
-        <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <a
-            href="https://uus7bkjsmgjmzysi.public.blob.vercel-storage.com/HardikDhuriResume-7sIXGa7EBzUjyb31r0fa9uQ7QF2IwA.pdf?download=1" // Replace with your actual PDF link
+            href="https://uus7bkjsmgjmzysi.public.blob.vercel-storage.com/HardikDhuriResume-7sIXGa7EBzUjyb31r0fa9uQ7QF2IwA.pdf?download=1"
             download="HardikDhuriResume.pdf"
-            className="flex items-center bg-slate-700 font-bold text-white px-4 py-2 mt-4 rounded"
+            className="flex items-center mt-8 bg-slate-700 font-bold justify-center text-white px-4 py-2 rounded"
           >
             Download Resume
             <Image className="w-8 ml-2" src={pdf} alt="Hardik Dhuri Resume" />
           </a>
-          <div className="flex mt-4 md:mt-0 space-x-4">
+          <div className="flex mt-8 justify-center space-x-6">
             <a
               href="https://github.com/HardikDhuri"
               target="_blank"
