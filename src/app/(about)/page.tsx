@@ -44,15 +44,15 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="flex flex-col h-full md:flex-row">
-      <div className="flex-1 flex justify-center items-center p-4 md:p-0">
+    <div className="flex flex-col h-full md:flex-row p-8">
+      <div className="flex flex-1 place-content-center p-4 md:p-0">
         <Image
           src={profileImage}
           alt="Profile Image"
-          className="min-w-72 max-w-80"
+          className="min-w-72 min-h-72 max-w-80 max-h-80 w-max h-max"
         />
       </div>
-      <div className="flex-1 p-4 md:p-10">
+      <div className="flex flex-col flex-1 p-4 md:p-10 h-full">
         <motion.h2
           className="text-2xl md:text-4xl font-extrabold"
           variants={typingVariants}
@@ -62,8 +62,15 @@ export default function Page() {
           {text} 🇮🇳
         </motion.h2>
         <p className="text-md md:text-lg mt-4">
-          Basic intro as Expertise in building Event Driven applications using
-          .Net Core.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
         </p>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <a
